@@ -12,6 +12,9 @@ public class Arrays {
         student_array[8]=109;
         student_array[9]=110;
 
+
+
+
         String[] std_name={"Karun","Varun"};//declaring and instantiating array in same line
         //for loop method to retrieve the array elements
         for(int i=0;i<student_array.length;i++)

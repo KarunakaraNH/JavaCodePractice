@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
+import java.util.stream.Collectors;
 
 public class StreamMain {
         //we have created list of places
@@ -31,6 +33,10 @@ public class StreamMain {
                 .map((p) -> p.toUpperCase())
                 .sorted()
                 .forEach((p) -> System.out.println(p));
+
+        List<String > words= Arrays.asList("Karun",null,"Rahul","Ram",null);
+       List<String> result= words.stream().filter(e->e!=null).collect(Collectors.toList());
+        System.out.println(result);
 
     }
 }
