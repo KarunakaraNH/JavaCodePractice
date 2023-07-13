@@ -1,6 +1,41 @@
 public class Arrays {
     public static void main(String[] args){
-        int[] student_array=new int[10];
+
+
+        int[] numbers={10000,2,9,10,28,9,485,10,30};
+        //fins max number
+        int maxNumber=numbers[0];
+        for(int i=1;i<numbers.length;i++){
+            if(numbers[i]>maxNumber){
+                maxNumber=numbers[i];
+            }
+
+        }
+        System.out.println("Max number is "+maxNumber);
+
+        for(int i=1;i<=100;i++){
+            if(i%3==0){
+                System.out.println("Fizz");
+            }else if(i%5==0){
+                System.out.println("Buzz");
+            }else{
+                System.out.println(i);
+            }
+        }
+
+
+  /*      //multid array
+        int[][] marray=new int[3][4];
+        for(int i=0;i<3;i++){
+            for(int j=0;j<4;j++){
+                marray[i][j]=(int)Math.random()*100;
+                System.out.println(marray[i][j]);
+            }
+            System.out.println(marray);
+
+        }
+*/
+        /*int[] student_array=new int[10];
         student_array[0]=101;
         student_array[1]=102;
         student_array[2]=103;
@@ -45,6 +80,6 @@ public class Arrays {
             for(int ele:innerArray){
                 System.out.println("using for loop "+ ele);
             }
-        }
+        }*/
     }
 }
