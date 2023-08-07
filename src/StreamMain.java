@@ -29,7 +29,7 @@ public class StreamMain {
 //                .forEach((p)-> System.out.println(p));
 
         myplaces.stream()
-                .filter((p) -> p.startsWith("Nepal"))
+                .filter( p -> p.startsWith("Nepal"))
                 .map((p) -> p.toUpperCase())
                 .sorted()
                 .forEach((p) -> System.out.println(p));
