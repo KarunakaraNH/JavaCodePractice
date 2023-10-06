@@ -7,7 +7,9 @@ public class StreamDemo2 {
 
     public static void main(String[] args) {
 
-        //Print the elements using streams
+        //Print the elements using streams1.10
+
+
         IntStream
                 .range(1,10)
                 .forEach(System.out::println);

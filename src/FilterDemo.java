@@ -25,8 +25,8 @@ public class FilterDemo {
         productList.add(new FilterDemo(23,"Dell",53500));
         productList.add(new FilterDemo(24,"Dell",3500));
         productList.add(new FilterDemo(25,"Dell",93500));
-        System.out.println(productList);
-        productList
+       // System.out.println(productList);
+       productList
                 .stream().filter(p->p.price>25000)
                         .forEach(pr-> System.out.println(pr));
 

@@ -1,6 +1,6 @@
 public class SwitchStatement {
 
-    public static int n=20;
+    public static int n=10;
 
     public static void main(String[] args) {
         switch (n){
@@ -19,3 +19,4 @@ public class SwitchStatement {
 
     }
 }
+
